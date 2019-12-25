@@ -1,5 +1,6 @@
 package com.example.test1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,7 +25,6 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
-
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -72,5 +72,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onTugasButtonClick(android.view.View view) {
         setContentView(R.layout.detail_tugas);
+    }
+
+    public void onKlikTugas(android.view.View view){
+
+        Intent intent = new Intent(MainActivity.this, inputtugas.class);
+        startActivity(intent);
     }
 }
