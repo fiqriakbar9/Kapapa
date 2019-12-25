@@ -60,6 +60,7 @@
         android:layout_width="81dp"
         android:layout_height="72dp"
         android:clickable="true"
+        android:onClick="onKlikTugas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.875"
